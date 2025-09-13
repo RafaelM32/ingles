@@ -111,7 +111,7 @@ function adicionarFonte(fonte){
 
 function adicionarImagem(imagem){
     let img = document.createElement("img")
-    img.src = "/src/imagens/" + imagem.nome + ".png" // Caminho absoluto
+    img.src = "./src/imagens/" + imagem.nome + ".png" // Caminho absoluto
     div_base.appendChild(img)
     adicionarFonte(imagem.fonte)
 }
