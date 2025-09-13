@@ -236,6 +236,7 @@ function questaoAnterior(lista){
 ///IMAGENS DE APOIO
 imagem_apoio_0 = new Imagem_apoio("0","Disponível em: http://thumbpress.com. Acesso em: 28 out. 2013.")
 imagem_apoio_1 = new Imagem_apoio("1","Disponível em: http://thumbpress.com. Acesso em: 28 out. 2013.")
+imagem_apoio_2 = new Imagem_apoio("2","Disponível em: www.hongkiat.com. Acesso em: 18 ago. 2017 (adaptado).")
 
 ///TEXTOS DE APOIO
 texto_apoio_0 = new Texto_apoio("Holy War", "Oh, so we can hate each other and fear each other \
@@ -247,6 +248,19 @@ Oh, maybe we should love somebody \
 Oh, maybe we could care a little more \
 So maybe we should love somebody \
 Instead of polishing the bombs of holy war", "KEYS, A. Here. Estados Unidos: RCA Records, 2016.")
+
+texto_apoio_1 = new Texto_apoio("","I remember being caught speaking Spanish at recess \
+[...] I remember being sent to the corner of the classroom \
+for “talking back” to the Anglo teacher when all I was trying \
+to do was tell her how to pronounce my name. “If you \
+want to be American, speak ‘American’. If you don’t like it, \
+go back to Mexico where you belong”. \
+“I want you to speak English […]”, my mother would \
+say, mortified that I spoke English like a Mexican. At Pan \
+American University, I and all Chicano students were \
+required to take two speech classes. Their purpose: to get \
+rid of our accents.","ANZALDÚA, G. Borderlands/La Frontera: The New Mestiza. \
+San Francisco: Aunt Lute Books, 1987.")
 
 ///QUESTOES
 const questao_0 = new Questao("A relação entre as citações atribuídas ao físico Albert Einstein \
@@ -262,9 +276,26 @@ e intolerância, o marcador “instead of ” introduz a ideia de",["A mudança 
     "C rotina de isolamento", "D perspectiva bélica", "E cenário religioso."],[texto_apoio_0],false,"a")
 
 
+const questao_2 = new Questao("O texto estabelece uma relação entre elementos da \
+natureza e comandos de um programa de computador para",["A alertar as pessoas sobre a rápida destruição da natureza",
+    "B conscientizar os indivíduos sobre a passagem acelerada \
+do tempo", "C apresentar aos leitores os avanços tecnológicos na \
+área da agricultura", "D orientar os usuários sobre o emprego sustentável das \
+novas tecnologias.", "E informar os interessados sobre o tempo de crescimento \
+de novas árvores."
+],false,[imagem_apoio_2],"a")
+
+const questao_3 = new Questao("O problema abordado nesse texto sobre imigrantes residentes \
+nos Estados Unidos diz respeito aos prejuízos gerados pelo(a)",["A repúdio ao sotaque espanhol no uso do inglês.",
+    "B resignação diante do apagamento da língua materna", "C escassez de oportunidades de aprendizado do espanhol.",
+     "D choque entre falantes de línguas distintas de diferentes \
+gerações. ", "E concorrência entre as variações linguísticas do inglês \
+e as do espanhol"
+],[texto_apoio_1],false,"a")
+
 ///LISTA PRINCIPAL
 
-const lista_de_questoes = [questao_0, questao_1]
+const lista_de_questoes = [questao_0, questao_1, questao_2, questao_3]
 
 botao_proxima.addEventListener("click", function(){
     proximaQuestao(lista_de_questoes)
